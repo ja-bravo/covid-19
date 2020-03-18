@@ -101,7 +101,7 @@ const ByCountry: React.FC<{
       direction="row"
       style={{ marginBottom: 32, marginTop: 32 }}
     >
-      <Card xs={4} align="start">
+      <Card md={4} xs={12} align="start">
         <Typography
           variant="h6"
           align="left"
@@ -130,7 +130,7 @@ const ByCountry: React.FC<{
         />
       </Card>
 
-      <Card xs={4} align="start">
+      <Card md={4} xs={12} align="start">
         <Typography
           variant="h6"
           align="left"
@@ -155,7 +155,7 @@ const ByCountry: React.FC<{
         <MemoizedItems type="deaths" data={deaths} search={deathSearch} />
       </Card>
 
-      <Card xs={4} align="start">
+      <Card md={4} xs={12} align="start">
         <Typography
           variant="h6"
           align="left"

@@ -9,7 +9,7 @@ const Summary: React.FC<{
   cases: number;
 }> = ({ deaths, cases, recovered }) => (
   <Grid container spacing={2} direction="row" style={{ marginBottom: 32 }}>
-    <Card xs={4}>
+    <Card md={4} xs={12}>
       <Typography
         variant="h4"
         align="center"
@@ -26,7 +26,7 @@ const Summary: React.FC<{
       </Typography>
     </Card>
 
-    <Card xs={4}>
+    <Card md={4} xs={12}>
       <Typography
         variant="h4"
         align="center"
@@ -46,7 +46,7 @@ const Summary: React.FC<{
       </Typography>
     </Card>
 
-    <Card xs={4}>
+    <Card md={4} xs={12}>
       <Typography
         variant="h4"
         align="center"

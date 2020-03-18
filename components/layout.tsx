@@ -6,7 +6,6 @@ import styled, { css } from "styled-components";
 const Wrapper = styled(Container)<{ isMobile?: boolean }>`
   padding-top: 16px;
   padding-bottom: 16px;
-  margin-top: 64px;
   width: initial !important;
   @media (min-width: 600px) {
     padding-top: 24px;

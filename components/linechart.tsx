@@ -30,7 +30,8 @@ const LineChart: React.FC<{ data: IDaily[] }> = ({ data }) => {
 
   useEffect(() => {
     chartRef.current = am4core.create("chartdiv", am4charts.XYChart);
-
+    chartRef.current.responsive = new am4core.Responsive();
+    chartRef.current.responsive.enabled = true;
     // Create axes
     const dateAxis = chartRef.current.xAxes.push(new am4charts.DateAxis());
     dateAxis.renderer.minGridDistance = 60;
@@ -44,7 +45,9 @@ const LineChart: React.FC<{ data: IDaily[] }> = ({ data }) => {
     chartRef.current.scrollbarX = new am4core.Scrollbar();
 
     chartRef.current.legend = new am4charts.Legend();
-    chartRef.current.legend.position = "right";
+    chartRef.current.legend.position = "bottom";
+
+    chartRef.current.calculateRelativeSize();
   }, []);
 
   useEffect(() => {
